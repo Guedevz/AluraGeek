@@ -1,0 +1,190 @@
+:root {
+
+/* ============================================================  COLORS  ============================================================ */
+
+    --primary-brand:            #5400c8;
+    --primary-variant-shade-1:  #42009F;
+    --primary-variant-shade-2:  #320077;
+    --primary-variant-shade-3:  #210050;
+    --primary-variant-shade-4:  #110028;
+    --primary-variant-tint-1:   #6E06FF;
+    --primary-variant-tint-2:   #9244FF;
+    --primary-variant-tint-3:   #B683FF;
+    --primary-variant-tint-4:   #f1e9fb;
+    --neutral-black:            #080014;
+    --neutral-gray-100:         #0e0d35;
+    --neutral-gray-90:          #27264a;
+    --neutral-gray-80:          #3e3d5d;
+    --neutral-gray-70:          #575672;
+    --neutral-gray-60:          #6e6e86;
+    --neutral-gray-50:          #868599;
+    --neutral-gray-40:          #9f9eae;
+    --neutral-gray-30:          #b7b7c3;
+    --neutral-gray-20:          #cfcfd7;
+    --neutral-gray-10:          #e7e7eb;
+    --neutral-gray-0:           #fff;
+
+
+    /* *********************** SHADOW *********************** */
+
+    --shade-0:      hsla(0, 0%, 0%, 0.94);
+    --shade-1:      hsla(0, 0%, 0%, 0.895);
+    --shade-2:      hsla(0, 0%, 0%, 0.815);
+    --shade-3:      hsla(0, 0%, 0%, 0.73);
+    --shade-4:      hsla(0, 0%, 0%, 0.64);
+    --shade-5:      hsla(0, 0%, 0%, 0.55);
+    --shade-6:      hsla(0, 0%, 0%, 0.45);
+    --shade-7:      hsla(0, 0%, 0%, 0.36);
+    --shade-8:      hsla(0, 0%, 0%, 0.28);
+    --shade-9:      hsla(0, 0%, 0%, 0.19);
+    --shade-10:     hsla(0, 0%, 0%, 0.1);
+    --shade-11:     hsla(0, 0%, 0%, 0.035);
+
+/* ============================================================  FONTS  ============================================================ */
+
+/* ==============================  TYPE  ============================== */
+
+    --body-font:              "Lato", sans-serif;
+    --heading-font:           "Pixelify Sans", sans-serif;
+
+/* ==============================  SIZE  ============================== */
+
+    --heading-h1:       clamp(2.4rem, 4vw, 4.8rem);
+    --heading-h2:       clamp(2rem, 3vw, 3.2rem);
+    --heading-h3:       clamp(1.8rem, 2.5vw, 2.8rem);
+    --subtitle-h4:      clamp(1.4rem, 2.5vw, 2rem);
+    --subtitle-h5:      clamp(1.2rem, 2vw, 1.6rem);
+    --font-size:        clamp(1.2rem, 2vw, 1.8rem);
+
+/* ==============================  WEIGHT  ============================== */
+
+    --font-weight-light:      300;
+    --font-weight-regular:    400;
+    --font-weight-medium:     500;
+    --font-weight-semibold:   600;
+    --font-weight-bold:       700;
+
+/* ==============================  LINE HEIGHT & SPACING ============================== */
+
+    --line-height-h1:       clamp(4.8rem, 8vw, 6.4rem);
+    --line-height-h2:       clamp(3.2rem, 6vw, 4rem);
+    --line-height-h3:       clamp(2.8rem, 5vw, 3.2rem);
+    --line-height-h4:       clamp(2rem, 4vw, 2.6rem);
+    --line-height-h5:       clamp(1.6rem, 3.5vw, 2.08rem);
+
+    --letter-spacing:       clamp(0px, 0.2vw, 0.5px);
+
+/* ============================================================   SPACING  ============================================================ */
+
+    --spacing-2:      0.2rem;
+    --spacing-4:      0.4rem;
+    --spacing-6:      0.6rem;
+    --spacing-8:      0.8rem;
+    --spacing-10:     1rem;
+    --spacing-12:     1.2rem;
+    --spacing-16:     1.6rem;
+    --spacing-20:     2rem;
+    --spacing-24:     2.4rem;
+    --spacing-28:     2.8rem;
+    --spacing-32:     3.2rem;
+    --spacing-40:     4rem;
+    --spacing-48:     4.8rem;
+    --spacing-56:     5.6rem;
+    --spacing-64:     6.4rem;
+    --spacing-72:     7.2rem;
+    --spacing-80:     8.0rem;
+    --spacing-96:     9.6rem;
+    --spacing-120:    12rem;
+    --spacing-128:    12.8rem;
+    --spacing-160:    16rem;
+    --spacing-192:    19.2rem;
+    --spacing-256:    25.6rem;
+
+    --padding-border: clamp(2rem, 5vw, 4rem);
+
+/* ============================================================   VISUAL STYLES  ============================================================ */
+
+/* ==============================  ICONS & IMAGES ============================== */
+
+
+    --icon-size-SM:     clamp(1.2rem, 2vw, 1.6rem);
+    --icon-size-MD:     clamp(1.5rem, 2.5vw, 2rem);
+    --icon-size-LG:     clamp(2rem, 3vw, 2.4rem);
+    --icon-size-XL:     clamp(2.5rem, 4vw, 3.2rem);
+    --image-size:       clamp(20rem, 10vw, 35rem);
+
+/* ==============================  BORDER RADIUS  ============================== */
+
+    --border-radius-XS:         .1rem;
+    --border-radius-SM:         .4rem;
+    --border-radius-MD:         .6rem;
+    --border-radius-LG:         .8rem;
+    --border-radius-XL:         1.6rem;
+    --border-radius-2XL:        2rem;
+    --border-radius-round:      50%;
+
+      /* ============================== BORDER WIDTHS ============================== */
+
+    --border-weight-XS:     .1rem;
+    --border-weight-SM:     .2rem;
+    --border-weight-MD:     .3rem;
+    --border-weight-LG:     .4rem;
+    --border-weight-XL:     .8rem;
+
+    /* ============================== BOX SHADOW ============================== */
+
+    --box-shadow-0:     0px 1px 1px 0px hsla(0, 0%, 0%, 0.035),
+                        0px 2px 2px 0px rgba(0, 0, 0, 0.125),
+                        0px 4px 4px 0px rgba(0, 0, 0, 0.125),
+                        0px 8px 8px 0px rgba(0, 0, 0, 0.125),
+                        0px 16px 16px 0px rgba(0, 0, 0, 0.125);
+
+    --box-shadow-1:     0px 1px 1px 0px rgba(0, 0, 0, 0.15),
+                        0px 2px 2px 0px rgba(0, 0, 0, 0.15),
+                        0px 4px 4px 0px rgba(0, 0, 0, 0.15),
+                        0px 8px 8px 0px rgba(0, 0, 0, 0.15);
+
+    --box-shadow-2:     0px 1px 1px 0px rgba(0, 0, 0, 0.11),
+                        0px 2px 2px 0px rgba(0, 0, 0, 0.11),
+                        0px 4px 4px 0px rgba(0, 0, 0, 0.11),
+                        0px 8px 8px 0px rgba(0, 0, 0, 0.11),
+                        0px 16px 16px 0px rgba(0, 0, 0, 0.11),
+                        0px 32px 32px 0px rgba(0, 0, 0, 0.11);
+
+    --box-shadow-3:     0px 1px 1px 0px rgba(0, 0, 0, 0.25),
+                        0px 2px 2px 0px rgba(0, 0, 0, 0.20),
+                        0px 4px 4px 0px rgba(0, 0, 0, 0.15),
+                        0px 8px 8px 0px rgba(0, 0, 0, 0.10),
+                        0px 16px 16px 0px rgba(0, 0, 0, 0.05);
+
+    --box-shadow-4:     0px 1px 1px 0px rgba(0, 0, 0, 0.25),
+                        0px 2px 2px 0px rgba(0, 0, 0, 0.2),
+                        0px 4px 4px 0px rgba(0, 0, 0, 0.15),
+                        0px 8px 8px 0px rgba(0, 0, 0, 0.1),
+                        0px 16px 16px 0px rgba(0, 0, 0, 0.05);
+
+    --box-shadow-5:     0px 19px 38px 0px rgba(0, 0, 0, 0.08),
+                        0px 2px 2px 0px rgba(0, 0, 0, 0.12),
+                        0px 4px 4px 0px rgba(0, 0, 0, 0.16),
+                        0px 8px 8px 0px rgba(0, 0, 0, 0.2);
+
+    --box-shadow-border:    inset 0px 0px 0px 1px currentColor;
+
+    --box-shadow-light:     inset 0px 0px 0px 1px rgba(255, 255, 255, 0.13);
+
+    --box-shadow-dark-overlay:      inset 0px 1px 0px 1px rgba(0, 0, 0, 0.13);
+
+
+/* ============================== Z-INDEX ============================== */
+
+    --z-index-backtap:      -1;
+    --z-index-fab:          1000;
+    --z-index-tooltip:      2000;
+    --z-index-toast:        3000;
+    --z-index-dropdown:     4000;
+    --z-index-backdrop:     5000;
+    --z-index-banner:       5050;
+    --z-index-nav:          6000;
+    --z-index-modal:        7000;
+    --z-index-spinner:      8000;
+}

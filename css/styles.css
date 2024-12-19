@@ -1,0 +1,60 @@
+@import url(./reset.css); @import url(./variables.css);
+
+
+/* ============================================================  GLOBAL STYLES  ============================================================ */
+
+/* ==============================  CONTAINER  ============================== */
+
+body {
+    padding: var(--padding-border);
+    font-family: var(--body-font);
+    font-size: var(--font-size);
+    font-weight: var(--font-weight-regular);
+    color: var(--primary-variant-shade-4);
+}
+
+/* ============================== TEXTS ============================== */
+
+    /* *********************** HEADINGS *********************** */
+
+    .heading__h1 {
+        font-family: var(--heading-font);
+        font-size: var(--heading-h1);
+        font-weight: bold;
+        line-height: var(--line-height-h1);
+        color: var(--primary-brand);
+    }
+
+    .heading__h2 {
+        font-family: var(--heading-font);
+        font-size: var(--heading-h2);
+        font-weight: semibold;
+        line-height: var(--line-height-h2);
+        color: var(--primary-brand);
+    }
+
+    .heading__h3 {
+        font-family: var(--heading-font);
+        font-size: var(--heading-h3);
+        font-weight: semibold;
+        line-height: var(--line-height-h3);
+        color: var(--primary-brand);
+    }
+
+    /* *********************** SUBTITLES *********************** */
+
+    .subtitle__h4 {
+        font-family: var(--heading-font);
+        font-size: var(--subtitle-h4);
+        font-weight: semibold;
+        line-height: var(--line-height-h4);
+        color: var(--primary-variant-shade-2);
+    }
+
+    .subtitle__h5 {
+        font-family: var(--heading-font);
+        font-size: var(--subtitle-h5);
+        font-weight: semibold;
+        line-height: var(--line-height-h5);
+        color: var(--primary-variant-shade-2);
+    }
