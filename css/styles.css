@@ -29,7 +29,7 @@ body {
     .heading__h2 {
         font-family: var(--heading-font);
         font-size: var(--heading-h2);
-        font-weight: semibold;
+        font-weight: var(--font-weight-medium);
         line-height: var(--line-height-h2);
         color: var(--primary-brand);
     }
@@ -37,7 +37,7 @@ body {
     .heading__h3 {
         font-family: var(--heading-font);
         font-size: var(--heading-h3);
-        font-weight: semibold;
+        font-weight: var(--font-weight-medium);
         line-height: var(--line-height-h3);
         color: var(--primary-brand);
     }
@@ -47,7 +47,7 @@ body {
     .subtitle__h4 {
         font-family: var(--heading-font);
         font-size: var(--subtitle-h4);
-        font-weight: semibold;
+        font-weight: var(--font-weight-medium);
         line-height: var(--line-height-h4);
         color: var(--primary-variant-shade-2);
     }
@@ -55,7 +55,7 @@ body {
     .subtitle__h5 {
         font-family: var(--heading-font);
         font-size: var(--subtitle-h5);
-        font-weight: semibold;
+        font-weight: var(--font-weight-medium);
         line-height: var(--line-height-h5);
         color: var(--primary-variant-shade-2);
     }
@@ -93,4 +93,156 @@ header {
 
 .header__logo-title {
     text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+/* ============================================================  MAIN  ============================================================ */
+
+/* ==============================  CONTAINER  ============================== */
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+            "form"
+            "product";
+    gap: var(--spacing-48);
+    margin: var(--spacing-48) 0;
+}
+
+/* ==============================  FORM  ============================== */
+
+/* ==============================  CONTAINER  ============================== */
+
+.form {
+    grid-area: form;
+    width: 100%;
+    height: auto;
+    padding: var(--padding-border);
+    border: var(--border-weight-MD) solid var(--primary-variant-shade-4);
+    background-color: var(--primary-variant-tint-3);
+    box-shadow: var(--box-shadow-3);
+}
+
+/* ==============================  TITTLE  ============================== */
+
+.form__title {
+    margin-bottom: var(--spacing-48);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: var(--letter-spacing);
+}
+
+/* ==============================  INPUTS  ============================== */
+
+.form__container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-16);
+}
+
+.form__label {
+    display: block;
+    margin-bottom: var(--spacing-4);
+    font-weight: var(--font-weight-semibold);
+    text-transform: uppercase;
+    letter-spacing: var(--letter-spacing);
+}
+
+.form__input {
+    width: 100%;
+    height: clamp(3.5rem, 4vw, 4.5rem);
+    padding: var(--spacing-6);
+    outline: none;
+    border: var(--border-weight-MD) solid var(--primary-variant-shade-4);
+}
+
+.form__input::placeholder {
+    color: var(--neutral-gray-30);
+}
+
+.form__input--file {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.form__btn--file {
+    display: inline-block;
+    margin-bottom: var(--spacing-48);
+    background-color: var(--primary-variant-tint-2);
+}
+
+/* ==============================  BUTTONS  ============================== */
+
+
+.form__actions {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.form__btn {
+    padding: var(--spacing-8) var(--spacing-16);
+    font-weight: var(--font-weight-semibold);
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    border: var(--border-weight-MD) solid var(--primary-variant-shade-4);
+    color: var(--primary-variant-tint-4);
+    box-shadow: var(--box-shadow-3);
+}
+
+.form__btn--submit {
+    width: 40%;
+    background-color: var(--primary-brand);
+}
+
+.form__btn--reset {
+    width: 40%;
+    color: var(--primary-brand);
+    background-color: var(--primary-variant-tint-4);
+}
+
+
+
+
+
+
+
+/* ==============================  PRODUCTS  ============================== */
+
+.product {
+    grid-area: product;
+}
+
+
+
+
+
+
+
+/* ============================================================  MEDIA QUERIES  ============================================================ */
+
+@media (width >= 1024px) {
+
+    /* ============================================================  MAIN  ============================================================ */
+
+    /* ==============================  CONTAINER  ============================== */
+
+    .container {
+        grid-template-columns: 2fr 1fr;
+        grid-template-areas:
+                "product form";
+        /* gap: var(--spacing-48); */
+    }
 }

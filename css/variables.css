@@ -72,7 +72,7 @@
     --line-height-h4:       clamp(2rem, 4vw, 2.6rem);
     --line-height-h5:       clamp(1.6rem, 3.5vw, 2.08rem);
 
-    --letter-spacing:       clamp(0px, 0.2vw, 0.5px);
+    --letter-spacing:       clamp(1px, 0.2vw, 2px);
 
 /* ============================================================   SPACING  ============================================================ */
 
