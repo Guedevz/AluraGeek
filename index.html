@@ -29,35 +29,36 @@
         <img src="./assets/img-logo.png" alt="imagen del logo" class="header__logo-img">
         <h1 class="header__logo-title heading__h1">AluraGeek</h1>
     </header>
+    <section class="form">
+        <h2 class="form__title heading__h2">Agregar Producto:</h2>
+        <form action="" class="form__container">
+            <div class="form__group">
+                <label for="product-name" class="form__label">Nombre:</label>
+                <input type="text" id="product-name" name="product-name" class="form__input" placeholder="Nombre del producto" required>
+            </div>
+
+            <div class="form__group">
+                <label for="product-price" class="form__label">Precio:</label>
+                <input type="number" id="product-price" name="product-price" class="form__input" placeholder="Precio del producto" step="0.01" required>
+            </div>
+
+            <div class="form__group">
+                <label for="product-image" class="form__label">Imagen:</label>
+                <input type="file" id="product-image" name="product-image" class="form__input--file" accept="image/*" required>
+                <label for="product-image" class="form__btn form__btn--file">Seleccionar archivo</label>
+            </div>
+
+            <div class="form__actions">
+                <button type="submit" class="form__btn form__btn--submit">Agregar</button>
+                <button type="reset" class="form__btn form__btn--reset">Limpiar</button>
+            </div>
+        </form>
+    </section>
+    <section class="product">
+        <h2 class="product__title heading__h2">Mis Productos:</h2>
+        <ul class="product__list" id="data-list"></ul>
+    </section>
     <main class="container">
-        <section class="form">
-            <h2 class="form__title heading__h2">Agregar Producto:</h2>
-            <form action="" class="form__container">
-                <div class="form__group">
-                    <label for="product-name" class="form__label">Nombre:</label>
-                    <input type="text" id="product-name" name="product-name" class="form__input" placeholder="Nombre del producto" required>
-                </div>
-
-                <div class="form__group">
-                    <label for="product-price" class="form__label">Precio:</label>
-                    <input type="number" id="product-price" name="product-price" class="form__input" placeholder="Precio del producto" step="0.01" required>
-                </div>
-
-                <div class="form__group">
-                    <label for="product-image" class="form__label">Imagen:</label>
-                    <input type="file" id="product-image" name="product-image" class="form__input--file" accept="image/*" required>
-                    <label for="product-image" class="form__btn form__btn--file">Seleccionar archivo</label>
-                </div>
-
-                <div class="form__actions">
-                    <button type="submit" class="form__btn form__btn--submit">Agregar</button>
-                    <button type="reset" class="form__btn form__btn--reset">Limpiar</button>
-                </div>
-            </form>
-        </section>
-        <section class="product">
-
-        </section>
     </main>
     <footer class="footer">
         <p class="footer__info"> © 2024 All rights reserved <span>{Guedevz}</span></p>
