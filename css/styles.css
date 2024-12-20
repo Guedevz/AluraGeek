@@ -120,7 +120,7 @@ header {
 .form {
     grid-area: form;
     width: 100%;
-    height: 65.9rem;
+    height: 72.9rem;
     padding: var(--padding-border);
     border: var(--border-weight-MD) solid var(--primary-variant-shade-4);
     background-color: var(--primary-variant-tint-3);
@@ -155,7 +155,7 @@ header {
 .form__input {
     width: 100%;
     height: clamp(3.5rem, 4vw, 4.5rem);
-    padding: var(--spacing-6);
+    padding: var(--spacing-6) var(--spacing-16);
     outline: none;
     border: var(--border-weight-MD) solid var(--primary-variant-shade-4);
 }
@@ -164,16 +164,8 @@ header {
     color: var(--neutral-gray-30);
 }
 
-.form__input--file {
-    position: absolute;
-    opacity: 0;
-    pointer-events: none;
-}
-
-.form__btn--file {
-    display: inline-block;
+.form__input-image {
     margin-bottom: var(--spacing-48);
-    background-color: var(--primary-variant-tint-2);
 }
 
 /* ==============================  BUTTONS  ============================== */
