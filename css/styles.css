@@ -120,7 +120,7 @@ header {
 .form {
     grid-area: form;
     width: 100%;
-    height: 56.9rem;
+    height: 65.9rem;
     padding: var(--padding-border);
     border: var(--border-weight-MD) solid var(--primary-variant-shade-4);
     background-color: var(--primary-variant-tint-3);
@@ -342,6 +342,12 @@ header {
                 "header header"
                 "product form"
                 "footer footer";
+    }
+
+    /* ============================================================  FORM  ============================================================ */
+
+    .form {
+        margin-top: 8.8rem;
     }
 
 }
