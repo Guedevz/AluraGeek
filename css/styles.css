@@ -310,9 +310,25 @@ header {
 
 .footer {
     grid-area: footer;
+    width: 100%;
+    height: clamp(6rem, 5vw, 10rem);
 }
 
+.footer__info {
+    padding: var(--spacing-10);
+    font-size: 1.4rem;
+    font-weight: var(--font-weight-medium);
+    text-align: center;
+    border: var(--border-weight-MD) solid var(--primary-variant-shade-4);
+    color: var(--primary-variant-tint-4);
+    background-color: var(--primary-brand);
+    box-shadow: var(--box-shadow-3);
+}
 
+.footer__info span {
+    vertical-align: middle;
+    color: var(--primary-variant-tint-3);
+}
 
 /* ============================================================  MEDIA QUERIES  ============================================================ */
 
